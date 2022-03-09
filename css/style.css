@@ -3,7 +3,7 @@
   --zima: #21b5f5;
 }
 .html {
-  font-family: Helvetica Neue, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
   font-size: 62.5%;
 }
 
@@ -12,9 +12,10 @@
   margin: 15px 15px;
 }
 .title {
-  float: left;
-  color: black;
+  letter-spacing: 0.1rem;
   text-decoration: none;
+  color: black;
+  float: left;
   font-size: 3.5rem;
   font-weight: 700;
 }
@@ -22,8 +23,42 @@
   color: var(--pink);
 }
 .navi-top {
+  display: flex;
+  text-transform: uppercase;
+  font-weight: 1000;
   float: right;
 }
-.navi-top.li {
-  float: left;
+.navi-top__elem {
+  height: 45px;
+  width: 45px;
+  margin-left: 40px;
+  margin-right: 20px;
+}
+.navi-top__elem a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  letter-spacing: -0.05rem;
+}
+.navi-top__elem a:hover {
+  color: var(--zima);
+}
+.navi-top__elem span {
+  margin-bottom: 15px;
+}
+.top {
+  text-indent: 0.4rem;
+}
+.gallery {
+  text-indent: -0.6rem;
+}
+.review {
+  text-indent: -0.5rem;
+}
+.article {
+  text-indent: -0.4rem;
+}
+.contact {
+  text-indent: -0.9rem;
 }
